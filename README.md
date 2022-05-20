@@ -23,3 +23,11 @@ Sometimes, school specials or certain departures on routes are operated by anoth
 3. Download the included TTC_RAD_tracker.py file along with the spreadsheets Bus Allocations.xslx and Route Allocations.xslx onto your mobile device, ensuring that they are in the same folder / directory. 
 4. Open TTC_RAD_tracker.py in Pydroid 3 and press the yellow play button on the bottom right to run. 
 
+### Updates to Bus Allocations
+
+* 2022-04-30: 8958 -> EGL
+* 2022-05-06: 3474-3488 -> MAL
+
+### Updates to Route Allocations
+* 2022-05-08: 172 -> EGL, 174 -> MTD, 306 -> BIR
+
