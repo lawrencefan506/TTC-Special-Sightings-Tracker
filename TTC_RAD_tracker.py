@@ -23,8 +23,10 @@ for child in root.iter('*'):
     if(child.tag == 'vehicle'):
         vehicle = child.get('id')
         route = child.get('routeTag')
-        if(int(vehicle) in busAllocations and busAllocations[int(vehicle)] not in routeAllocations[int(route)]):
-            RADs = np.append(RADs, vehicle + ": " + route)
+        secsSinceReport = child.get('secsSinceReport')
+        if(vehicle.isnumeric() == 'true'):
+            if(int(vehicle) in busAllocations and busAllocations[int(vehicle)] not in routeAllocations[int(route)] and int(secsSinceReport) < 60):
+                RADs = np.append(RADs, vehicle + ": " + route)
             
     if(child.tag == 'lastTime'):
         timestamp = child.get('time')
