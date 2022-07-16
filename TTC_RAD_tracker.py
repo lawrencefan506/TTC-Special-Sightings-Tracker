@@ -24,7 +24,7 @@ for child in root.iter('*'):
         vehicle = child.get('id')
         route = child.get('routeTag')
         secsSinceReport = child.get('secsSinceReport')
-        if(vehicle.isnumeric() == 'true'):
+        if(vehicle.isnumeric() == True):
             if(int(vehicle) in busAllocations and busAllocations[int(vehicle)] not in routeAllocations[int(route)] and int(secsSinceReport) < 60):
                 RADs = np.append(RADs, vehicle + ": " + route)
             
