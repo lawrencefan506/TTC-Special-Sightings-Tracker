@@ -24,8 +24,8 @@ for child in root.iter('*'):
         vehicle = child.get('id')
         route = child.get('routeTag')
         secsSinceReport = child.get('secsSinceReport')
-        if(vehicle.isnumeric() == True):
-            if(int(vehicle) in busAllocations and busAllocations[int(vehicle)] not in routeAllocations[int(route)] and int(secsSinceReport) < 60):
+        if(vehicle.isnumeric() == True and int(secsSinceReport) < 60):
+            if(int(vehicle) in busAllocations and busAllocations[int(vehicle)] not in routeAllocations[int(route)]):
                 RADs = np.append(RADs, vehicle + ": " + route)
             
     if(child.tag == 'lastTime'):
@@ -36,6 +36,3 @@ for child in root.iter('*'):
 RADs = np.sort(RADs)
 for x in RADs:
     print(x)
-        
-
-
