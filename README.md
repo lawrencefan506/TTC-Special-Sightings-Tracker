@@ -39,4 +39,5 @@ Sometimes, school specials or certain departures on routes are operated by anoth
 
 ### Updates to Route Allocations
 * 2022-05-08: 172 -> EGL, 174 -> MTD, 306 -> BIR
+* 2022-07-31: 506 Shuttle (Spadina Stn - Distillery) -> ARW, MAL, MCN
 
