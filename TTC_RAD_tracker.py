@@ -31,6 +31,7 @@ for child in root.iter('*'):
     if(child.tag == 'lastTime'):
         timestamp = child.get('time')
         dateTime = datetime.fromtimestamp(int(timestamp) / 1e3)
+        dateTime = dateTime.strftime("%Y-%m-%d %H:%M:%S")
         print("Updated at:", dateTime)
 
 RADs = np.sort(RADs)
