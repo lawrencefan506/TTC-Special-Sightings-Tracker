@@ -37,6 +37,7 @@ Sometimes, school specials or certain departures on routes are operated by anoth
 * 2022-04-30: 8958 -> EGL
 * 2022-05-06: 3474-3488 -> MAL
 * 2022-09-07: 3489-3493 -> MAL, 9078-9079 -> MAL, 9139 -> ARW, 9225-9234 -> ARW
+* 2022-09-26: 9220-9224 -> ARW
 
 ### Updates to Route Allocations
 * 2022-05-08: 172 -> EGL, 174 -> MTD, 306 -> BIR
