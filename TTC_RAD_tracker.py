@@ -8,7 +8,7 @@ from datetime import datetime
 route_df = pd.read_excel('Route Allocations.xlsx')
 routeAllocations = route_df.to_dict('records')[0]
 
-#Current bus to garage allocations (Last update: 2022-09-07)
+#Current bus to garage allocations (Last update: 2022-10-09)
 bus_df = pd.read_excel('Bus Allocations.xlsx')
 busAllocations = bus_df.to_dict('records')[0]
 
@@ -16,24 +16,31 @@ busAllocations = bus_df.to_dict('records')[0]
 data = requests.get('https://webservices.umoiq.com/service/publicXMLFeed?command=vehicleLocations&a=ttc')
 root = ET.fromstring(data.content)
 
-#Read the API data
+#List of found special sightings will be added here
 RADs = np.array([])
 
-for child in root.iter('*'):
+#Read the API data
+for child in root.iter('*'): #Iterate through all the XML tags 
     if(child.tag == 'vehicle'):
         vehicle = child.get('id')
         route = child.get('routeTag')
         secsSinceReport = child.get('secsSinceReport')
         if(vehicle.isnumeric() == True and int(secsSinceReport) < 60):
-            if(int(vehicle) in busAllocations and busAllocations[int(vehicle)] not in routeAllocations[int(route)]):
+            if(int(vehicle) in busAllocations and busAllocations[int(vehicle)] not in routeAllocations[int(route)]): #Conditions for a special sighting
                 RADs = np.append(RADs, vehicle + ": " + route)
-            
+
+    #Retrieve the time and date the API was updated at         
     if(child.tag == 'lastTime'):
         timestamp = child.get('time')
         dateTime = datetime.fromtimestamp(int(timestamp) / 1e3)
         dateTime = dateTime.strftime("%Y-%m-%d %H:%M:%S")
         print("Updated at:", dateTime)
+        print("") #New line
 
-RADs = np.sort(RADs)
-for x in RADs:
-    print(x)
+#Print results 
+if(len(RADs) == 0):
+    print("No special sightings currently")
+else:
+    RADs = np.sort(RADs)
+    for x in RADs:
+        print(x)
