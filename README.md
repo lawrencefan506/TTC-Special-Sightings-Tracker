@@ -1,6 +1,6 @@
-# TTC-RAD-Tracker
+# TTC-Special-Sightings-Tracker
 
-Welcome to the TTC Run As Directed (RAD) Tracker. This program uses the TTC's [NextBus API](https://webservices.umoiq.com/service/publicXMLFeed?command=vehicleLocations&a=ttc) to output all current RAD buses on routes which are run by other garages. An example output is: 
+Welcome to the TTC Special Sightings Tracker. This program uses the TTC's [NextBus API](https://webservices.umoiq.com/service/publicXMLFeed?command=vehicleLocations&a=ttc) to output all current RAD buses on routes which are run by other garages. An example output is: 
 
 Updated at: 2022-05-17 15:27:19.935000
 
@@ -23,7 +23,7 @@ Updated at: 2022-05-17 15:27:19.935000
 
 ### Limitations
 
-Sometimes, school specials or certain departures on routes are operated by another garage other than the one that runs said route. For example, in the May 2022 board period, the 32 is a Mount Dennis route and has three school specials in the afternoon: two from Arrow Rd and one from Wilson. The buses on these school specials will show up on the RAD Tracker's output, even though they happen on a daily basis and are thus not considered RADs. Currently, the tracker has no method of distinguishing these school specials from true RADs. 
+Sometimes, school specials or certain departures on routes are operated by another garage other than the one that runs said route. For example, in the May 2022 board period, the 32 is a Mount Dennis route and has three school specials in the afternoon: two from Arrow Rd and one from Wilson. The buses on these school specials will show up on the Special Sightings Tracker's output, even though they happen on a daily basis and are thus not considered special. Currently, the tracker has no method of distinguishing these school specials from true special sightings. 
 
 ### To use on a mobile Android device for use on the go 
 
@@ -38,6 +38,7 @@ Sometimes, school specials or certain departures on routes are operated by anoth
 * 2022-05-06: 3474-3488 -> MAL
 * 2022-09-07: 3489-3493 -> MAL, 9078-9079 -> MAL, 9139 -> ARW, 9225-9234 -> ARW
 * 2022-09-26: 9220-9224 -> ARW
+* 2022-10-09: 8877-8880 -> EGL, 8949, 8953-8954, 8958, 8960-8964 -> ARW
 
 ### Updates to Route Allocations
 * 2022-05-08: 172 -> EGL, 174 -> MTD, 306 -> BIR
