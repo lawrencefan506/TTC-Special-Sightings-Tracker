@@ -1,6 +1,6 @@
 # TTC-Special-Sightings-Tracker
 
-Welcome to the TTC Special Sightings Tracker. This program uses the TTC's [NextBus API](https://webservices.umoiq.com/service/publicXMLFeed?command=vehicleLocations&a=ttc) to output all current RAD buses on routes which are run by other garages. An example output is: 
+Welcome to the TTC Special Sightings Tracker. This program uses the TTC's [NextBus API](https://webservices.umoiq.com/service/publicXMLFeed?command=vehicleLocations&a=ttc) to output all current special sighting, which are buses on routes which are run by other garages. An example output is: 
 
 Updated at: 2022-05-17 15:27:19.935000
 
