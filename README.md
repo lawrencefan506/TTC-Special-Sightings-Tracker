@@ -41,6 +41,7 @@ Sometimes, school specials or certain departures on routes are operated by anoth
 * 2022-10-09: 8877-8880 -> EGL; 8949, 8953-8954, 8958, 8960-8964 -> ARW
 * 2022-11-01: 3105, 3109, 3111, 3115, 3119 -> ARW 
 * 2022-11-14: 3100, 3103, 3122, 3125 -> ARW; 3105, 3109, 3111, 3115, 3119 -> MCN
+* 2022-11-18: 1360, 1361, 1379 -> WIL; 3103 -> MCN
 
 ### Updates to Route Allocations
 * 2022-05-08: 172 -> EGL; 174 -> MTD; 306 -> BIR
