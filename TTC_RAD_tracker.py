@@ -4,7 +4,7 @@ import xml.etree.ElementTree as ET
 import numpy as np 
 from datetime import datetime 
 
-#Current bus route to garage allocations (Last update: 2022-09-07)
+#Current bus route to garage allocations (Last update: 2022-11-21)
 route_df = pd.read_excel('Route Allocations.xlsx')
 routeAllocations = route_df.to_dict('records')[0]
 
