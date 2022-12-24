@@ -8,7 +8,7 @@ from datetime import datetime
 route_df = pd.read_excel('Route Allocations.xlsx')
 routeAllocations = route_df.to_dict('records')[0]
 
-#Current bus to garage allocations (Last update: 2022-11-30)
+#Current bus to garage allocations (Last update: 2022-12-23)
 bus_df = pd.read_excel('Bus Allocations.xlsx')
 busAllocations = bus_df.to_dict('records')[0]
 
