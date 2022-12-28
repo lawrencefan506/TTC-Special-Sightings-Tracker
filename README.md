@@ -45,6 +45,7 @@ Sometimes, school specials or certain departures on routes are operated by anoth
 * 2022-11-19: 1393 -> WIL; 3320-3321, 3323-3325, 3327-3329 -> QSY; 8460-8468 -> BIR; 9210-9219 -> ARW; 9220-9234 -> MCN 
 * 2022-11-23: 1392 -> WIL; 3322, 3326 -> QSY
 * 2022-11-30: 3100, 3122, 3125 -> MCN
+* 2022-12-23: 1356-1358, 1394, 1396-1398, 1401 -> WIL; 3302-3303, 3305, 3309 -> QSY; 9213-9215 -> BIR
 
 ### Updates to Route Allocations
 * 2022-05-08: 172 -> EGL; 174 -> MTD; 306 -> BIR
