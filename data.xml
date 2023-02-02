@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8" ?> 
+<body copyright="All data copyright Toronto Transit Commission 2023.">
+<predictions agencyTitle="Toronto Transit Commission" routeTitle="167-Pharmacy North" routeTag="167" stopTitle="Don Mills Station" stopTag="14151_ar">
+  <direction title="South - 167b Pharmacy North towards Don Mills Station">
+  <prediction epochTime="1675370850542" seconds="23" minutes="0" isDeparture="false" branch="167B" dirTag="167_0_CPDO" vehicle="8486" block="24_67_182" tripTag="45320861" />
+  <prediction epochTime="1675371536622" seconds="710" minutes="11" isDeparture="false" branch="167B" dirTag="167_0_167B" vehicle="3247" block="167_2_20" tripTag="45320894" />
+  <prediction epochTime="1675373274792" seconds="2448" minutes="40" isDeparture="false" affectedByLayover="true" branch="167B" dirTag="167_0_167B" vehicle="3124" block="167_1_10" tripTag="45320893" />
+  </direction>
+</predictions>
+</body>
