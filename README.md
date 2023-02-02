@@ -48,12 +48,14 @@ Sometimes, school specials or certain departures on routes are operated by anoth
 * 2022-12-23: 1356-1358, 1394, 1396-1398, 1401 -> WIL; 3302-3303, 3305, 3309 -> QSY; 9213-9215 -> BIR
 * 2022-12-28: 3301, 3304, 3306-3308 -> QSY; 9210-9212, 9216 -> BIR
 * 2023-01-06: 1359, 1362, 1369, 1378, 1385, 1386 -> WIL; 3313, 3316, 3318-3319 -> QSY; 3494-3509 -> MAL; 8868-8869; 8871-8880, 9212-9216 -> ARW
+* 2023-01-12: 3310-3312, 3314-3315, 3317 -> QSY
 
 ### Updates to Route Allocations
 * 2022-05-08: 172 -> EGL; 174 -> MTD; 306 -> BIR
 * 2022-07-31: 506 Shuttle (Spadina Stn - Distillery) -> ARW, MAL, MCN
 * 2022-09-07: 301/501 Shuttle -> WIL; 304/504 Shuttle -> BIR, QSY; 506 Shuttle -> EGL
 * 2022-11-21: 301/501 Shuttle -> QSY, WIL; 503 shuttle -> BIR; 304/504 Shuttle -> WIL
+* 2023-01-12: 301/501 Shuttle -> MTD, QSY, WIL
 
 ### Contact
 Email: lawrencefan195@gmail.com
