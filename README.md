@@ -59,3 +59,12 @@ Sometimes, school specials or certain departures on routes are operated by anoth
 
 ### Contact
 Email: lawrencefan195@gmail.com
+
+### Roadmap
+1. Setup server endpoint
+2. Create tracker module
+3. Setup client
+4. Deploy on Netify (test on sruge)
+
+#### Later
+4. Setup databse to presist user data
