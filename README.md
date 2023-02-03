@@ -68,3 +68,7 @@ Email: lawrencefan195@gmail.com
 
 #### Later
 4. Setup databse to presist user data
+
+# Server setup guide
+1. Run `source env/bin/activate` to activate the virtual environment
+2. Run `python3 App.py` to launch the server
