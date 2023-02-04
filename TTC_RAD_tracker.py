@@ -34,7 +34,19 @@ vehicleLocationsTree = ET.fromstring(vehicleLocations.content)
 
 #List of found special sightings will be added here
 RADs = np.array([])
+#Next departures for each of the special sightings. Key: vehicle, Value: list of next departures
 nextDeparturesDict = {} 
+#Current time in format "year-month-day hour:minute"
+now = datetime.now().strftime("%Y-%m/%d %H:%M")
+#Day of the week. 0 = Monday, 6 = Sunday
+dayOfWeek = datetime.now().weekday()
+#Initialize serviceClass based on dayOfWeek variable above
+if dayOfWeek < 5: #weekday
+    serviceClass = "wkd"
+elif dayOfWeek == 5: #Saturday
+    serviceClass = "sat"
+else: #Sunday
+    serviceClass = "sun"
 
 ###STEP 1###
 #Read the API data
@@ -100,7 +112,8 @@ for child in vehicleLocationsTree.iter('*'): #Iterate through all the XML tags
                 
                 #Generate a list of next block departures for the next 3 hours 
                 nextDepartures = []
-                xpath = './/tr[@blockID="' + run + '"]'
+
+                xpath = 'route[@serviceClass="'+serviceClass+'"]'+'/tr[@blockID="'+run+'"]'
                 departures = scheduleRoot.findall(xpath)
                 for departure in departures:
                     timepoints = departure.findall('stop')
@@ -127,8 +140,11 @@ for child in vehicleLocationsTree.iter('*'): #Iterate through all the XML tags
                         continue
 
                     #Get the end point
-                    endpoint = stopLookup[timepoints[-1].attrib['tag']]
-                    nextDepartures.append(startpoint + " towards " + endpoint)
+                    for timepoint in reversed(timepoints):
+                        if timepoint.text != "--":
+                            endpoint = stopLookup[timepoint.attrib['tag']]
+                            nextDepartures.append(startpoint + " towards " + endpoint)
+                            break
 
                 nextDepartures.sort()
                 nextDeparturesDict[vehicle] = nextDepartures
